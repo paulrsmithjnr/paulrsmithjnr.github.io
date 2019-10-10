@@ -1,0 +1,140 @@
+.container {
+  display: grid;
+  grid-template-rows: 155px auto;
+  grid-gap: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row-start: 1;
+  background-color: #063cb1;
+  height: 100%;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(#063cb1, white, #063cb1);
+  border: 8px double white;
+  border-radius: 25px;
+  height: 100px;
+  width: 50%;
+}
+
+header h1{
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-row-start: 2;
+  grid-template-columns: repeat(10, 10%);
+  grid-gap: 15px;
+
+}
+
+.sidebar{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background: linear-gradient(to right, gray, white);
+  border-right: 8px solid #063cb1;
+  border-top: 8px solid #063cb1;
+  border-bottom: 8px solid #063cb1;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+
+}
+
+.content {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  border-top: 8px solid #063cb1;
+  border-right: 8px solid #063cb1; 
+  border-bottom: 8px solid #063cb1; 
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;  
+}
+
+.image img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.workexperience, .education{
+  border-top: solid thin gray;
+  display: grid;
+  grid-template-rows: 50px auto auto;
+}
+
+.skillsexpertise {
+  border-top: solid thin gray;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px auto;
+}
+
+.contact, .socialmedia {
+  padding-left: 40px;  
+  
+}
+
+.socialmedia img {
+  height: 25px;
+  width: 27px;
+}
+
+.contact img {
+  height: 20px;
+  width: 20px;
+}
+
+.socialmedia {
+  border-top: black solid 3px;
+}
+
+.year1, .eduyr1{
+  grid-row-start: 2;
+  float: left;
+}
+
+.job1, .edu1{ 
+  grid-row-start: 2;
+  float: right;
+}
+
+.year2, .eduyr2{
+  grid-row-start: 3;
+  float: left;
+}
+
+.job2, .edu2{ 
+  grid-row-start: 3;
+  float: right;
+}
+
+.workexperience p, .education p{
+  padding-right: 100px;
+}
+
+.listA {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.listB {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
